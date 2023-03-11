@@ -7,7 +7,7 @@ const {MongoClient} = require('mongodb')
 
 app.use(express.json())
 app.use(cors({
-  origin : "https://rems-sdp.cyclic.app"
+  origin : "*"
 }))
 
 
