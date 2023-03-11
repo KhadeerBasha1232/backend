@@ -6,7 +6,9 @@ const cors = require("cors")
 const {MongoClient} = require('mongodb')
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin : "https://rems-sdp.cyclic.app"
+}))
 
 
 app.use('/api/auth',require('./routes/auth.js'))
